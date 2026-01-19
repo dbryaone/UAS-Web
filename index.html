@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Pustaka | Manifestasi Yang Mulia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --yellow: #FFE14E;
+            --navy: #192853;
+            --bg: #ECE1D5;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--navy);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: radial-gradient(rgba(25, 40, 83, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Header Dibuat Lebih Tipis */
+        header {
+            background-color: var(--navy);
+            color: #ffffff;
+            padding: 60px 20px; /* Padding dikurangi agar lebih tipis */
+            text-align: center;
+            border-bottom: 6px solid var(--yellow);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem; /* Ukuran font disesuaikan */
+            margin: 0;
+            color: var(--yellow);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.8;
+            margin-top: 10px;
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+
+        .main-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            justify-content: center;
+        }
+
+        .column-link {
+            flex: 1;
+            min-width: 320px;
+            max-width: 500px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(25, 40, 83, 0.12);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(25, 40, 83, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(25, 40, 83, 0.2);
+        }
+
+        .card-header {
+            background-color: var(--navy);
+            color: var(--yellow);
+            padding: 25px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+        }
+
+        .content-box {
+            padding: 40px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .manifesto-text {
+            margin: 0;
+            font-size: 1.05rem;
+            color: #2c3e50;
+        }
+
+        .action-text {
+            display: block;
+            margin-top: 25px;
+            font-weight: 600;
+            color: var(--navy);
+            text-align: right;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .action-text span {
+            background-color: var(--yellow);
+            padding: 6px 18px;
+            border-radius: 50px;
+        }
+
+        /* Footer Navy untuk Index */
+        footer {
+            background-color: var(--navy);
+            color: var(--yellow);
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            font-family: 'Playfair Display', serif;
+            border-top: 4px solid var(--yellow);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sinema Pustaka</h1>
+        <p>— Sebuah Manifestasi Intelektual & Kedalaman Makna —</p>
+    </header>
+
+    <div class="main-wrapper">
+        <a href="pustaka.html" class="column-link">
+            <div class="card">
+                <div class="card-header">📚 Pustaka</div>
+                <div class="content-box">
+                    <p class="manifesto-text">
+                        Koleksi Buku Admin merangkum berbagai bacaan favorit, baik dalam format fisik maupun digital. Mulai dari cerita ringan yang menghibur hingga alur yang kompleks. Admin mengurasi daftar ini dengan mencampur berbagai genre, seperti komedi hingga genre slice of life.
+                    </p>
+                    <div class="action-text"><span>Jelajahi Koleksi →</span></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="sinema.html" class="column-link">
+            <div class="card">
+                <div class="card-header">🎬 Sinema</div>
+                <div class="content-box">
+                    <p class="manifesto-text">
+                        Koleksi Film Admin merangkum berbagai karya sinematik pilihan, baik dari layar lebar maupun layanan streaming. Mulai dari tontonan santai hingga plot yang kompleks, Admin mengurasi daftar ini dengan memadukan keseruan komedi dan kedalaman emosi dari genre slice of life.
+                    </p>
+                    <div class="action-text"><span>Lihat Tayangan →</span></div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        Dibuat untuk mengenang apa yang sudah dibaca dan ditonton oleh Admin &bull; 2026
+    </footer>
+
+</body>
+</html>
